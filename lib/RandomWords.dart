@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
-// Single
-class RandomWordState extends State<RandomWord> {
+class RandomWordsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final word = WordPair.random().asPascalCase;
-    return Text(word);
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text('Random Words List'),
+      ),
+      body: RandomWords()
+    );
   }
 }
 
-class RandomWord extends StatefulWidget {
-  @override
-  RandomWordState createState() => new RandomWordState();
-}
-
-// Multiple
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);

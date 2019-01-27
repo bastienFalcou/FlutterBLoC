@@ -1,16 +1,22 @@
-# bloc_test
+[![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-turquoise.svg?longCache=true)](https://flutter.io)
 
-A new and very cool Flutter application.
+# Flutter BLoC Application
 
-## Getting Started
+A new and very cool Flutter application, built with the BLoC architecture.
 
-This project is a starting point for a Flutter application.
+ ‏‏‎ 
+![BLoC](README_files/BLoC.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Resources
+
+### Flutter
 
 - [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### BLoC
+
+- [Flutter Login Tutorial with “flutter_bloc”](https://medium.com/flutter-community/flutter-login-tutorial-with-flutter-bloc-ea606ef701ad)
+- [Flutter Bloc package documentation](https://pub.dartlang.org/packages/flutter_bloc)
+- [BLoC documentation](https://felangel.github.io/bloc/#/gettingstarted)
+- [Flutter Architecture Examples](https://github.com/brianegan/flutter_architecture_samples)
