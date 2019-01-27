@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:bloc_test/Screens/RandomWords.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_test/Blocs/AuthenticationBloc.dart';
+import 'package:bloc_test/Model/AuthenticationEvent.dart';
 
 class Authentication extends StatelessWidget {
   @override
@@ -17,8 +18,14 @@ class Authentication extends StatelessWidget {
           }),
         ],
       ),
-      body: Center(
-        child: Text("Placeholder"),
+      body: Container(
+        child: Center(
+            child: RaisedButton(
+              child: Text('logout'),
+              onPressed: () {
+                authenticationBloc.dispatch(LoggedOut());
+              },
+            )),
       ),
     );
   }
