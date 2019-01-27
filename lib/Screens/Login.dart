@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bloc_test/Helpers/UserRepository.dart';
+import 'package:bloc_test/Helpers/User.dart';
 import 'package:bloc_test/Blocs/LoginBloc.dart';
 import 'package:bloc_test/Blocs/AuthenticationBloc.dart';
 import 'package:bloc_test/Screens/LoginForm.dart';

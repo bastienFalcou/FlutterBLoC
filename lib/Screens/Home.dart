@@ -4,17 +4,20 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_test/Blocs/AuthenticationBloc.dart';
 import 'package:bloc_test/Model/AuthenticationEvent.dart';
 
-class Authentication extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final AuthenticationBloc authenticationBloc = BlocProvider.of<AuthenticationBloc>(context);
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Authentication'),
+        title: new Text('Home'),
         actions: <Widget>[
           new IconButton(icon: const Icon(Icons.list), onPressed: () {
-            _pushSaved(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => RandomWordsList()),
+            );
           }),
         ],
       ),
@@ -27,13 +30,6 @@ class Authentication extends StatelessWidget {
               },
             )),
       ),
-    );
-  }
-
-  void _pushSaved(BuildContext context) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => RandomWordsList()),
     );
   }
 }

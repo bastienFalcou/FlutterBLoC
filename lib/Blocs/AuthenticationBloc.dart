@@ -3,7 +3,7 @@ import 'package:meta/meta.dart';
 import 'package:bloc/bloc.dart';
 import 'package:bloc_test/Model/AuthenticationEvent.dart';
 import 'package:bloc_test/Model/AuthenticationState.dart';
-import 'package:bloc_test/Helpers/UserRepository.dart';
+import 'package:bloc_test/Helpers/User.dart';
 
 class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> {
   final UserRepository userRepository;
