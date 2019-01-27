@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Welcome to Flutter'),
         ),
-        body: Center(
-          child: RandomWords(),
-        ),
+        body: RandomWords()
       ),
     );
   }
