@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'RandomWords.dart';
+import 'package:bloc_test/Screens/RandomWords.dart';
 
 class Authentication extends StatelessWidget {
   @override
