@@ -4,6 +4,9 @@
 
 A new and very cool Flutter application, built with the BLoC architecture.
 
+ ‏‏‎ 
+![BLoC](README_files/BLoC.png)
+
 ## Resources
 
 ### Flutter
