@@ -44,28 +44,39 @@ class _LoginFormState extends State<LoginForm> {
           });
         }
 
-        return Form(
-          child: Column(
-            children: [
-              TextFormField(
-                decoration: InputDecoration(labelText: 'username'),
-                controller: _usernameController,
-              ),
-              TextFormField(
-                decoration: InputDecoration(labelText: 'password'),
-                controller: _passwordController,
-                obscureText: true,
-              ),
-              RaisedButton(
-                onPressed:
-                state is! LoginLoading ? _onLoginButtonPressed : null,
-                child: Text('Login'),
-              ),
-              Container(
-                child:
-                state is LoginLoading ? CircularProgressIndicator() : null,
-              ),
-            ],
+        return Container(
+          padding: EdgeInsets.all(20.0),
+          child: Form(
+            child: Column(
+              children: [
+                TextFormField(
+                  decoration: InputDecoration(labelText: 'username'),
+                  controller: _usernameController,
+                ),
+                TextFormField(
+                  decoration: InputDecoration(labelText: 'password'),
+                  controller: _passwordController,
+                  obscureText: true,
+                ),
+                Divider(
+                  height: 24.0,
+                  color: Colors.transparent,
+                ),
+                RaisedButton(
+                  onPressed:
+                  state is! LoginLoading ? _onLoginButtonPressed : null,
+                  child: Text('Login'),
+                ),
+                Divider(
+                  height: 24.0,
+                  color: Colors.transparent,
+                ),
+                Container(
+                  child:
+                  state is LoginLoading ? CircularProgressIndicator() : null,
+                ),
+              ],
+            ),
           ),
         );
       },
